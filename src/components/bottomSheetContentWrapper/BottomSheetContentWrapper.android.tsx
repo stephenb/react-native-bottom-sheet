@@ -9,6 +9,7 @@ const BottomSheetContentWrapperComponent = forwardRef<
 >(({ children, onGestureEvent, onHandlerStateChange }, ref) => {
   return (
     <TapGestureHandler
+      enabled={false}
       ref={ref}
       maxDurationMs={1000000}
       shouldCancelWhenOutside={false}
